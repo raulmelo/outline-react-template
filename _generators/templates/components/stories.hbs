@@ -1,0 +1,41 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+
+import {{pascalCase name}}, { propsModel } from './{{pascalCase name}}';
+
+<Meta
+  title="{{name}}"
+  component={
+    {{pascalCase name}}
+  }
+/>
+
+# {{name}}
+
+
+### Importa o componente
+
+<code>
+  <pre>
+    import {{pascalCase name}} from 'src/shared/components/{{pascalCase name}}/{{pascalCase name}}.tsx'
+  </pre>
+</code>
+
+### Usar o componente
+Não esqueça de passar as parâmetros
+<pre>
+  <code>
+    <{{pascalCase name}} />
+  </code>
+</pre>
+
+
+
+
+With `MDX` we write longform markdown documentation for our `Badge` component and embed Doc Blocks inline.
+
+
+<Canvas>
+  <Story name="Dedault" args={ {title: 'hello2'} }>
+    {(args) => <{{pascalCase name}} {...args} />}
+  </Story>
+</Canvas>
