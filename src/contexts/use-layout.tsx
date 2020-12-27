@@ -1,5 +1,5 @@
-import React, { createContext, FunctionComponent, useContext, useEffect, useState } from 'react';
-import { LayoutProps, OnLoginProps } from './use-layout.props';
+import React, { createContext, FunctionComponent, useEffect, useState } from 'react';
+import { LayoutProps } from './use-layout.props';
 
 
 const layoutContext = createContext({} as any);

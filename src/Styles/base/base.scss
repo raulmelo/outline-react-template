@@ -1,0 +1,30 @@
+@import "styles/mixins/scrollbar.scss";
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+// Ensure the app containers fills the screen
+html,body {
+  font-family: var(--font-primary);
+  letter-spacing: -1px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  width: 100vw;
+  height: 100vh;
+}
+
+html,
+body,
+#root {
+  min-height: 100vh;
+  height: max-content;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  min-height: 800px;
+}

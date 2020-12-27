@@ -1,16 +1,24 @@
 import React from 'react'
+{{#if hasCss }}
 import './{{pascalCase name}}-page.scss'
+{{/if}}
 
-
-
-const {{pascalCase name}}Page = () => {
-return (
-<div className="{{pascalCase name}}Page">
-  <h2>Caminho {{dashCase folder}}</h2>
-  <pre>
-    <code>src/projects/{{dashCase folder}}/pages/{{pascalCase name}}-page/{{pascalCase name}}-page.tsx</code>
-  </pre>
-</div>
-)}
+const {{pascalCase name}}Page = () => { 
+  return (
+    <div className="{{pascalCase name}}Page">
+      <h2>Caminho {{dashCase folder}}</h2>
+      {
+        /*
+        Adicione sua nova página no fluxo acima -> pages/{{pascalCase folder}}/index.tsx
+        ---
+        import {{pascalCase name}}Page from 'pages/{{pascalCase folder}}/{{pascalCase name}}-page/{{pascalCase name}}-page'
+        ---
+        Adicione o caminho da sua url exemplo: path="/{{pascalCase name}}"
+        <Route path="/{{pascalCase folder}}/" component={ {{pascalCase name}}Page }/>
+        */
+      }
+    </div>
+  )
+}
 
 export default {{pascalCase name}}Page

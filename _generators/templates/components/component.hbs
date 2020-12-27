@@ -1,5 +1,7 @@
 import React from 'react'
+{{#if hasCss }}
 import './{{pascalCase name}}.scss'
+{{/if}}
 
 export interface propsModel {
   title?: string
@@ -10,7 +12,6 @@ const {{pascalCase name}} = (props: propsModel) => {
     <div className="{{pascalCase name}}">
       <h2>{props.title}</h2>
     </div>
-
   )
 }
 
