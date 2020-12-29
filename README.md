@@ -1,46 +1,60 @@
-# Getting Started with Create React App
+# Welcome to StackEdit!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Hi! I'm your first Markdown file in **StackEdit**. If you want to learn about StackEdit, you can read me. If you want to play with Markdown, you can edit me. Once you have finished with me, you can create new files by opening the **file explorer** on the left corner of the navigation bar.
 
-## Available Scripts
+## Fluxo de páginas 
+O fluxo de página foi inserido no projeto para manter um padrão de rotas, estrutura e uma organização fácil para o projeto de médio e grande porte. 
 
-In the project directory, you can run:
+Um exemplo de como podemos gerar um fluxo de autentificação de usuário.
 
-### `yarn start`
+ 1. `yarn generator`
+ 2. escolhe opção de *Fluxo de página*
+ 3. adiciona o nome do fluxo ***Auth***
+ 
+ Pronto.
+```
+📦src  
+ ┣ 📂pages  
+ ┃ ┣ 📂 Auth
+ ┃ ┃ ┗ 📜index.tsx  
+ ┃ ┃ ┣ 📂login 
+ ┃ ┃ ┃ ┗ 📜 login-page.tsx  
+ ┃ ┃ ┃ ┗ 📜 login-page.scss  
+ ┃ ┃ ┣ 📂register
+ ┃ ┃ ┣ 📂new-password
+ ┃ ┗ 📂Home  
+ ┃ ┃ ┗ 📜index.tsx  
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Nova página
+Usamos também o yarn generator para adicionar novas páginas, assim podemos continuar mantendo nossa estrutura organizada e padrão.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `yarn test`
+Um exemplo de como podemos gerar um fluxo de autentificação de usuário.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+ 1. `yarn generator`
+ 2. escolhe opção de ***Página*** 
+<small>Criar uma nova página na aplicação</small>.
+ 4. Nome da página:  Login 
+<small>Adicione o nome da sua página que deseja criar</small>.
+ 5. Escolha se quer adicionar um css para sua página
+<small>Por padrão é Y *true* apenas da um enter para adicionar</small>
+ 6. Qual fluxo criado: **Auth** 
+<small> Adicione o nome do fluxo de páginas que você criou <small>  
+ 7. adiciona o nome do fluxo ***Auth***
+ 8. Depois que gerado abra sua página gerada e segue os passos que estão comentado no arquivo gerado.
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+ ```
+📦src  
+ ┣ 📂pages  
+ ┃ ┣ 📂 Auth
+ ┃ ┃ ┗ 📜index.tsx  
+ ┃ ┃ ┣ 📂login // página gerada
+ ┃ ┃ ┃ ┗ 📜 login-page.tsx // arquivo da página   
+ ┃ ┃ ┃ ┗ 📜 login-page.scss // css da página  
+ ┃ ┃ ┣ 📂register
+ ┃ ┃ ┣ 📂new-password
+ ┃ ┗ 📂Home  
+ ┃ ┃ ┗ 📜index.tsx  
+```
