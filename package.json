@@ -12,7 +12,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "tailwind": "npx tailwindcss build node_modules/tailwindcss/tailwind.css -c ./tailwind.config.js -o src/styles/lib/tailwind.scss",
+    "tailwind": "npx tailwindcss build node_modules/tailwindcss/tailwind.css -c ./tailwind.config.js -o public/tailwind.css && npm run minify-css",
+    "minify-css": "npx clean-css-cli -o public/tailwind.css public/tailwind.css",
     "generator": "yarn plop --plopfile ./_generators/plopfile.js"
   },
   "eslintConfig": {
